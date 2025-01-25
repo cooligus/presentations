@@ -28,7 +28,6 @@ jobs:
         run: |
           dirs=$(ls presentations | jq -R -s -c 'split("\n")[:-1]')
           echo "dirs=$dirs" >> $GITHUB_OUTPUT
-      - name: Create dist directory
 
   build-matrix:
     needs: get-presentations
