@@ -46,6 +46,9 @@ jobs:
           
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
+        with:
+          package_json_file: ./package.json
+          run_install: false
 
       - name: Install dependencies
         run: pnpm i
@@ -58,7 +61,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/${{matrix.dir}}
+          path: ${{matrix.dir}}/dist
 
   deploy:
     environment:
