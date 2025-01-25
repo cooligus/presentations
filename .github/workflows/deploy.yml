@@ -23,60 +23,63 @@ jobs:
         run: |
           # Use ls or find to list directories/files
           echo "{dirs}={$(ls | jq -R -s -c 'split("\n")[:-1]')}" >> $GITHUB_OUTPUT
+          
+      - name: Print Matrix
+        run: ls | jq -R -s -c 'split("\n")[:-1]'
 
       - name: Print Matrix
         run: echo "${{ steps.list_dirs.outputs.dirs }}"
 
-  deploy-matrix:
-    needs: deploy
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
+  # deploy-matrix:
+  #   needs: deploy
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
         
-    steps:
-      - name: Deploy
-        run: echo "${{ matrix.dir }}"
+  #   steps:
+  #     - name: Deploy
+  #       run: echo "${{ matrix.dir }}"
         
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        version: [10, 12, 14]
-    steps:
-      - uses: actions/checkout@v4
+  # build:
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       version: [10, 12, 14]
+  #   steps:
+  #     - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 'lts/*'
           
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+  #     - name: Setup pnpm
+  #       uses: pnpm/action-setup@v3
 
-      - name: Setup @antfu/ni
-        run: pnpm i -g @antfu/ni
+  #     - name: Setup @antfu/ni
+  #       run: pnpm i -g @antfu/ni
 
-      - name: Install dependencies
-        run: nci
+  #     - name: Install dependencies
+  #       run: nci
 
-      - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+  #     - name: Build
+  #       run: nr build --base /${{github.event.repository.name}}/
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+  #     - name: Setup Pages
+  #       uses: actions/configure-pages@v4
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
+  #     - uses: actions/upload-pages-artifact@v3
+  #       with:
+  #         path: dist
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   name: Deploy
+  #   steps:
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v4
