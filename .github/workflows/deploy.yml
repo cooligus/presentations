@@ -71,7 +71,7 @@ jobs:
         run: pnpm i
 
       - name: Build
-        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out /${{github.event.repository.name}}/dist/${{matrix.dir}}
+        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out ../dist/${{matrix.dir}}
 
   deploy:
     environment:
