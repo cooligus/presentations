@@ -29,6 +29,8 @@ jobs:
         run: |
           dirs=$(ls | jq -R -s -c 'split("\n")[:-1]')
           echo "dirs=$dirs" >> $GITHUB_OUTPUT
+      - name: Create dist directory
+        run: mkdir dist
 
   build-matrix:
     needs: get-presentations
@@ -69,7 +71,7 @@ jobs:
         run: pnpm i
 
       - name: Build
-        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out /${{github.event.repository.name}}/dist/${{matrix.dir}} --emptyOutDir
+        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out /${{github.event.repository.name}}/dist/${{matrix.dir}}
 
   deploy:
     environment:
