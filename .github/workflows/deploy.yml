@@ -27,7 +27,7 @@ jobs:
       - name: List Presentations
         id: list_presentations
         run: |
-          dirs=$(ls | jq -R -s -c 'split("\n")[:-1]')
+          dirs=$(ls presentations | jq -R -s -c 'split("\n")[:-1]')
           echo "dirs=$dirs" >> $GITHUB_OUTPUT
       - name: Create dist directory
         run: mkdir dist
@@ -40,7 +40,7 @@ jobs:
         dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
     defaults:
       run:
-        working-directory: ${{ matrix.dir }}
+        working-directory: presentations/${{ matrix.dir }}
     steps:
       - uses: actions/checkout@v4
 
@@ -71,7 +71,7 @@ jobs:
         run: pnpm i
 
       - name: Build
-        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out ../dist/${{matrix.dir}}
+        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out ../../dist/${{matrix.dir}}
 
       - uses: actions/upload-artifact@v4
         with:
