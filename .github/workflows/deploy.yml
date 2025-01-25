@@ -3,7 +3,9 @@ name: Deploy pages
 on:
   workflow_dispatch:
   push:
-    branches: [main, deploy]
+    branches: 
+      - main
+      - deploy
 
 permissions:
   contents: read
@@ -27,6 +29,8 @@ jobs:
         run: |
           dirs=$(ls | jq -R -s -c 'split("\n")[:-1]')
           echo "dirs=$dirs" >> $GITHUB_OUTPUT
+      - name: Create dist directory
+        run: mkdir dist
 
   build-matrix:
     needs: get-presentations
@@ -50,18 +54,29 @@ jobs:
           version: ^8.14.1
           run_install: false
 
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: Install dependencies
         run: pnpm i
 
       - name: Build
-        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}}
+        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out ../dist/${{matrix.dir}}
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
-          path: ${{matrix.dir}}/dist
+          name: ${{matrix.dir}}
+          path: dist/${{matrix.dir}}
 
   deploy:
     environment:
@@ -71,6 +86,22 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+      
+      - run: ls .. -R
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
