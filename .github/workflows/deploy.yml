@@ -17,6 +17,8 @@ concurrency:
 jobs:
   get-presentations:
     runs-on: ubuntu-latest
+    outputs:
+      dirs: ${{ steps.list_presentations.outputs.dirs }}
     steps:
       - uses: actions/checkout@v4
 
@@ -31,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dir: ${{ GITHUB_OUTPUT }}
+        dir: ${{ fromJSON(needs.build.outputs.dirs) }}
         
     steps:
       - name: Check
