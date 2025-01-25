@@ -9,7 +9,7 @@ defaults:
   layout: image-right #image-x 
   image: https://baconmockup.com/300/600
 mdc: true
-image: /new-york.jpg
+image: ./new-york.jpg
 ---
 
 # Tworzywa sztuczne w budowlance i stolarce
