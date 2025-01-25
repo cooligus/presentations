@@ -3,7 +3,7 @@ name: Deploy pages
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, deploy]
 
 permissions:
   contents: read
@@ -15,37 +15,59 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  get-presentations:
     runs-on: ubuntu-latest
+    outputs:
+      dirs: ${{ steps.list_presentations.outputs.dirs }}
+    steps:
+      - uses: actions/checkout@v4
 
+      - name: List Presentations
+        id: list_presentations
+        run: |
+          dirs=$(ls | jq -R -s -c 'split("\n")[:-1]')
+          echo "dirs=$dirs" >> $GITHUB_OUTPUT
+
+  build-matrix:
+    needs: get-presentations
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
+    defaults:
+      run:
+        working-directory: ${{ matrix.dir }}
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-
-      - name: Setup @antfu/ni
-        run: pnpm i -g @antfu/ni
+          
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: ^8.14.1
+          run_install: false
 
       - name: Install dependencies
-        run: nci
+        run: pnpm i
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ${{matrix.dir}}/dist
 
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
+    needs: build-matrix
     runs-on: ubuntu-latest
     name: Deploy
     steps:
