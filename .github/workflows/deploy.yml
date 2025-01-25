@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
+        dir: ${{ fromJSON(env.dirs) }}
         
     steps:
       - name: Deploy
