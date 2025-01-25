@@ -34,7 +34,7 @@ jobs:
         dir: ${{ fromJSON(env.dirs) }}
         
     steps:
-      - name: Deploy
+      - name: Check
         run: echo "${{ matrix.dir }}"
         
   # build:
