@@ -22,7 +22,7 @@ jobs:
         id: list_dirs
         run: |
           # Use ls or find to list directories/files
-          echo "::set-output name=dirs::$(ls | jq -R -s -c 'split("\n")[:-1]')"
+          echo "{dirs}={$(ls | jq -R -s -c 'split("\n")[:-1]')}" >> $GITHUB_OUTPUT
 
       - name: Print Matrix
         run: echo "${{ steps.list_dirs.outputs.dirs }}"
