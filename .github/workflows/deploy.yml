@@ -91,9 +91,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      
       - name: Download artifacts
         uses: actions/download-artifact@v4
+        with:
+          path: dist
       
       - run: ls .. -R
 
