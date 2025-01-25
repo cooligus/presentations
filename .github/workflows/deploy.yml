@@ -52,10 +52,15 @@ jobs:
           version: ^8.14.1
           run_install: false
 
-      - name: Cache pnpm store
-        uses: actions/cache@v3
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
         with:
-          path: ~/.pnpm-store
+          path: ${{ env.STORE_PATH }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
@@ -64,14 +69,7 @@ jobs:
         run: pnpm i
 
       - name: Build
-        run: pnpm build --base /${{github.event.repository.name}}/
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ${{matrix.dir}}/dist
+        run: pnpm build --base /${{github.event.repository.name}}/${{matrix.dir}} --out /${{github.event.repository.name}}/dist/${{matrix.dir}}
 
   deploy:
     environment:
@@ -81,6 +79,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
