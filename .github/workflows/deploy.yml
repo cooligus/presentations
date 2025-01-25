@@ -64,14 +64,14 @@ jobs:
         run: pnpm i
 
       - name: Build
-        run: pnpm build --base /${{github.event.repository.name}}
+        run: pnpm build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ${{matrix.dir}}/dist
 
   deploy:
     environment:
