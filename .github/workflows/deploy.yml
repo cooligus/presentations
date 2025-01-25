@@ -24,14 +24,14 @@ jobs:
         id: list_presentations
         run: |
           dirs=$(ls | jq -R -s -c 'split("\n")[:-1]')
-          echo "dirs=$dirs" >> $GITHUB_ENV
+          echo "dirs=$dirs" >> $GITHUB_STATE
 
   deploy-matrix:
     needs: get-presentations
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
+        dir: ${{ fromJSON($GITHUB_STATE) }}
         
     steps:
       - name: Check
