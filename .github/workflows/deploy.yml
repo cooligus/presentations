@@ -5,7 +5,6 @@ on:
   push:
     branches: 
       - main
-      - deploy
 
 permissions:
   contents: read
@@ -30,7 +29,6 @@ jobs:
           dirs=$(ls presentations | jq -R -s -c 'split("\n")[:-1]')
           echo "dirs=$dirs" >> $GITHUB_OUTPUT
       - name: Create dist directory
-        run: mkdir dist
 
   build-matrix:
     needs: get-presentations
@@ -95,8 +93,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: dist
-      
-      - run: ls .. -R
 
       - uses: actions/upload-pages-artifact@v3
         with:
