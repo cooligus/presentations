@@ -25,19 +25,17 @@ jobs:
         run: |
           dirs=$(ls | jq -R -s -c 'split("\n")[:-1]')
           echo "dirs=$dirs" >> $GITHUB_ENV
-      - name: Security check
-        run: echo $GITHUB_OUTPUT
 
-  # deploy-matrix:
-  #   needs: deploy
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     matrix:
-  #       dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
+  deploy-matrix:
+    needs: get-presentations
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
         
-  #   steps:
-  #     - name: Deploy
-  #       run: echo "${{ matrix.dir }}"
+    steps:
+      - name: Deploy
+        run: echo "${{ matrix.dir }}"
         
   # build:
   #   runs-on: ubuntu-latest
