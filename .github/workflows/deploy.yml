@@ -15,9 +15,34 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  get-presentations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Directories
+        id: list_dirs
+        run: |
+          # Use ls or find to list directories/files
+          echo "::set-output name=dirs::$(ls | jq -R -s -c 'split("\n")[:-1]')"
+
+      - name: Print Matrix
+        run: echo "${{ steps.list_dirs.outputs.dirs }}"
+
+  deploy-matrix:
+    needs: deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{ fromJSON(needs.get-presentations.outputs.dirs) }}
+        
+    steps:
+      - name: Deploy
+        run: echo "${{ matrix.dir }}"
+        
   build:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        version: [10, 12, 14]
     steps:
       - uses: actions/checkout@v4
 
