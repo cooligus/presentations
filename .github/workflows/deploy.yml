@@ -24,6 +24,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+          
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
 
       - name: Setup @antfu/ni
         run: pnpm i -g @antfu/ni
