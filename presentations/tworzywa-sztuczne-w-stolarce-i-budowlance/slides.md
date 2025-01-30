@@ -9,237 +9,330 @@ defaults:
   layout: image-right #image-x 
   image: https://baconmockup.com/300/600
 mdc: true
-image: ./new-york.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/styrofoam.jpg
 ---
 
 # Tworzywa sztuczne w budowlance i stolarce
 
 ---
-
-# Wprowadzenie do chemii plastycznej
-- Tworzywa sztuczne odgrywają kluczową rolę w naszym codziennym życiu i różnych gałęziach przemysłu.
-- Zastosowania obejmują opakowania, budownictwo, i inne.
-- Zrozumienie chemii tworzyw sztucznych pomaga docenić ich znaczenie i wszechstronność.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/styrofoam.jpg
 ---
 
-# Polichlorek winylu (PVC)
-- **PVC** jest szeroko stosowanym tworzywem sztucznym, znanym ze swojej trwałości i wszechstronności.
-- Zastosowania obejmują rury kanalizacyjne, które są odporne na korozję i chemikalia, okna i drzwi zapewniające izolację, a także panele ścienne i podłogi winylowe.
-- PVC jest wytwarzany w procesie polimeryzacji monomeru chlorku winylu (VCM), obejmującym ogrzewanie i ciśnienie w celu wytworzenia materiału stałego.
+# Styropian
+
+## Sposób produkcji i zastosowanie
+
+- Powstaje z polistyrenu ekspandowanego (EPS).
+- Używany w izolacji cieplnej ścian, dachów i fundamentów.
+- Lekki, łatwy w obróbce i montażu.
+
+<!--
+Styropian jest produkowany przez ekspandowanie granulek polistyrenu przy użyciu pary wodnej i środka porotwórczego, co powoduje ich spienienie. Następnie spienione granulki są formowane w bloki lub płyty. W budownictwie jest ceniony za doskonałe właściwości izolacyjne, lekkość i odporność na działanie wilgoci. Styropian jest jednym z najbardziej ekonomicznych materiałów izolacyjnych, ale jego ograniczeniem jest podatność na uszkodzenia mechaniczne i brak odporności na działanie wysokiej temperatury.
+-->
 
 ---
-
-# Poliuretan (PU)
-- **Poliuretan** to elastyczne i wytrzymałe tworzywo sztuczne o doskonałych właściwościach izolacyjnych.
-- Stosuje się go do izolacji termicznej i akustycznej, pianek montażowych, uszczelniania szczelin i zapewniania wsparcia strukturalnego, a także klejów i lakierów.
-- PU powstaje w wyniku reakcji polioli z izocyjanianami, w wyniku czego powstaje wszechstronny materiał.
-
----
-
-# Polipropylen (PP)
-- **Polipropylen** to lekkie i odporne chemicznie tworzywo sztuczne.
-- Zastosowania obejmują rury wodociągowe i kanalizacyjne, zbiorniki do przechowywania chemikaliów i płynów, oraz osłony przewodów elektrycznych.
-- PP jest wytwarzany w wyniku polimeryzacji gazu propylenowego, zwykle przy użyciu katalizatora.
-
----
-
-# Polietylen (PE)
-- **Polietylen** to jedno z najpopularniejszych tworzyw sztucznych, znane ze swojej elastyczności i wytrzymałości.
-- Stosowany jako folie budowlane, rury wodne, i izolacja przewodów.
-- PE powstaje w wyniku polimeryzacji gazowego etylenu.
-
----
-
-# Polistyren (PS)
-- **Polistyren** to wszechstronne tworzywo sztuczne, często używane do izolacji i pakowania.
-- Aplikacje obejmują izolacje termiczną w materiałach budowlanych oraz elementy dekoracyjne.
-- PS jest wytwarzany w wyniku polimeryzacji monomeru styrenu.
-
----
-
-# Poliwęglan (PC)
-- **Poliwęglan** to mocne i odporne na uderzenia tworzywo sztuczne.
-- Aplikacje obejmują panele dachowe i świetliki, okna, ścianki działowe.
-- PC jest wytwarzany przez polimeryzację bisfenolu A (BPA) i fosgenu.
-
----
-
-# Akryl (PMMA, pleksi)
-- **Akryl** to przezroczyste tworzywo sztuczne, znane ze swojej przejrzystości i odporności na warunki atmosferyczne.
-- Stosowane w oknach, witrynach, balustradach i szybach przednich.
-- Akryl jest wytwarzany w procesie polimeryzacji metakrylanu metylu (MMA).
-
----
-
-# Epoksydy (żywice epoksydowe)
-- **Epoksydy** są znane ze swoich silnych właściwości adhezyjnych i trwałości.
-- Używane jako kleje, powłoki ochronne i posadzki żywiczne.
-- Epoksydy powstają w wyniku reakcji związków epoksydowych z utwardzaczami.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/yellow-styrodur.jpg
 ---
 
 # Styrodur
-- **Styrodur** to rodzaj ekstrudowanej pianki polistyrenowej, znanej ze swoich właściwości izolacyjnych.
-- Stosowany do izolacji termicznej w budownictwie.
-- Styrodur jest wytwarzany przez wytłaczanie kulek polistyrenowych, które są ekspandowane i formowane w arkusze.
+
+## Właściwości i proces produkcji
+
+- Wytwarzany z polistyrenu ekstrudowanego (XPS).
+- Stosowany w izolacji termicznej fundamentów i dachów.
+- Charakteryzuje się wyższą gęstością niż styropian.
+
+<!--
+Styrodur powstaje przez wytłaczanie polistyrenu pod wysokim ciśnieniem i w kontrolowanej temperaturze, co pozwala na uzyskanie jednorodnej struktury komórkowej. Dzięki temu materiał ten jest bardziej odporny na ściskanie i wilgoć w porównaniu do styropianu. Jego zastosowanie obejmuje izolację fundamentów, dachów odwróconych, ścian oraz podłóg w budynkach energooszczędnych i pasywnych. W porównaniu do styropianu, Styrodur jest bardziej wytrzymały, ale również droższy.
+-->
 
 ---
-
-# Sklejka
-- **Sklejka** to wszechstronny produkt konstrukcyjny z drewna.
-- Stosowana do produkcji mebli, szafek, stołów.
-- Sklejka powstaje poprzez sklejanie ze sobą cienkich warstw forniru drewnianego, które są następnie prasowane i suszone.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
 ---
 
-# Płyta meblowa
-- **Płyta meblowa** to produkt z drewna konstrukcyjnego stosowany w produkcji mebli.
-- Powszechnie stosowana do szafek i półek.
-- Płyta meblowa jest wytwarzana przez ściskanie cząstek lub włókien drewna za pomocą klejów.
+# Płyty HPL
+
+## Produkcja i zastosowanie
+
+- Powstają z warstw papieru impregnowanego żywicami fenolowymi.
+- Używane w elewacjach, blatach i meblach.
+- Odporne na wilgoć i uszkodzenia mechaniczne.
+
+<!--
+Płyty HPL (High Pressure Laminate) są produkowane poprzez prasowanie pod wysokim ciśnieniem i w wysokiej temperaturze kilku warstw papieru nasączonego żywicami. Wierzchnia warstwa dekoracyjna jest pokrywana melaminą, co nadaje estetyczny wygląd i odporność na zarysowania, wilgoć i chemikalia. Są używane zarówno w budownictwie, jak i w przemyśle meblowym, gdzie wymagane są materiały wytrzymałe i łatwe w utrzymaniu. W przypadku płyt elewacyjnych HPL oferują szeroki wybór kolorów i faktur, umożliwiając ich wykorzystanie w nowoczesnych projektach architektonicznych.
+-->
 
 ---
-
-# HPL (laminat wysokociśnieniowy)
-- **HPL** to trwały materiał powierzchniowy wykorzystywany w różnych zastosowaniach.
-- Zapewnia powierzchnię dekoracyjną i ochronną w produkcji mebli.
-- HPL wytwarza się przez nakładanie warstw arkuszy papieru impregnowanych żywicą, które są prasowane pod wysokim ciśnieniem i ciepłem.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 ---
 
-# Pianka montażowa
-- **Pianka montażowa** to uniwersalna pianka klejąca stosowana w budownictwie.
-- Stosowana do montażu schodów, okien i drzwi.
-- Pianka montażowa oferuje izolację termiczną, wytrzymałość i łatwość użycia.
+# Płyty meblowe
+
+## Kleje stosowane w produkcji
+
+- Łączenie za pomocą klejów na bazie mocznika i formaldehydu.
+- Wykorzystywane w meblach domowych i biurowych.
+- Ekonomiczne i łatwe w obróbce.
+
+<!--
+Płyty meblowe są produkowane poprzez sprasowanie wiórów drzewnych lub włókien, które są łączone za pomocą żywic syntetycznych, takich jak żywice mocznikowo-formaldehydowe. Kleje te zapewniają trwałość i sztywność płyt, ale mogą emitować formaldehyd, co wymaga stosowania materiałów o niskiej emisji w celu spełnienia norm środowiskowych. Płyty meblowe mogą być pokrywane laminatem, melaminą lub fornirem, co pozwala na ich szerokie zastosowanie w produkcji mebli i wykończenia wnętrz.
+-->
 
 ---
-
-# Rodzaje lakierów do drewna
-- Lakiery na bazie wody: ekologiczne i łatwe do czyszczenia.
-- Plamy nitro: szybkoschnące i odpowiednie do różnych zastosowań.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 ---
 
-# Tworzywa sztuczne stosowane w produkcji lakierów
-- Żywice poliuretanowe (PU): zapewniają trwałość i elastyczność.
-- Żywice akrylowe (PMMA): zapewniają przejrzystość i odporność na promieniowanie UV.
-- Żywice alkidowe: zwiększają przyczepność i trwałość.
-- Żywice nitrocelulozowe: szybkoschnące i wszechstronne.
-- Żywice uretanowo-alkidowe: łączą właściwości uretanu i alkidu.
-- Lakiery na bazie wody: wykonane z żywic akrylowych lub poliuretanowych.
+# Płyty MDF
+
+## Skład i właściwości
+
+- Włókna drzewne sprasowane z żywicami.
+- Gładka powierzchnia, łatwa w obróbce.
+- Idealne do mebli i elementów dekoracyjnych.
+
+<!--
+Płyty MDF (Medium Density Fiberboard) powstają przez sprasowanie włókien drzewnych z dodatkiem żywic syntetycznych pod wysokim ciśnieniem i temperaturą. Dzięki swojej gładkiej i jednorodnej strukturze są łatwe do cięcia, frezowania i malowania. MDF jest szeroko stosowany w produkcji mebli, paneli ściennych oraz elementów wykończeniowych. Główną wadą jest podatność na wilgoć, dlatego do zastosowań w wilgotnym środowisku stosuje się wersje wilgocioodporne.
+-->
 
 ---
-
-# Wniosek: przyszłość tworzyw sztucznych
-- Przyszłość tworzyw sztucznych leży w zrównoważonym rozwoju i innowacjach.
-- Rozwój biodegradowalnych tworzyw sztucznych i technologii recyklingu będzie odgrywał kluczową rolę w zmniejszaniu ilości odpadów.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
 ---
 
-# Tworzywa sztuczne w budownictwie i stolarce
-- Tworzywa sztuczne odgrywają kluczową rolę w nowoczesnym budownictwie i stolarce.
-- Oferują szeroki wachlarz zastosowań, od izolacji termicznej po wykończenie powierzchni.
-- Prezentacja ta zgłębia temat zastosowania różnych tworzyw sztucznych, takich jak styropian, pianka poliuretanowa, lakiery, płyty meblowe i sklejka.
+# Płyty HDF
+
+## Skład i cechy
+
+- Wysoka gęstość włókien drzewnych i żywic.
+- Bardzo twarde i wytrzymałe.
+- Do podłóg laminowanych i tylnej części mebli.
+
+<!--
+Płyty HDF (High Density Fiberboard) to materiał o jeszcze większej gęstości niż MDF, co czyni je niezwykle wytrzymałymi na uszkodzenia mechaniczne. Są cienkie, ale bardzo twarde, dzięki czemu idealnie nadają się na tylne ścianki mebli, dna szuflad oraz jako podkłady podłogowe w panelach laminowanych. Podobnie jak MDF, HDF nie radzi sobie dobrze z wodą, ale często są laminowane, co zwiększa ich odporność. W ich produkcji stosuje się zaawansowane żywice syntetyczne.
+-->
 
 ---
-
-# Styropian (EPS)
-- **Styropian**, znany również jako EPS (ekspandowany polistyren), to lekki materiał izolacyjny wytwarzany z polistyrenu.
-- Jego struktura chemiczna składa się z długich łańcuchów polistyrenowych, które tworzą porowatą strukturę.
-- Ta porowatość nadaje styropianowi jego wyjątkowe właściwości izolacyjne.
-- Styropian jest odporny na wilgoć i stosunkowo tani w produkcji.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 ---
 
-# Zastosowania styropianu w budownictwie
-- Rozszerzony polistyren (EPS) to wszechstronny materiał izolacyjny.
-- Skutecznie minimalizuje przepływ ciepła, zmniejszając zużycie energii i koszty.
-- Izolacja EPS występuje w różnych formach, takich jak płyty, bloki i granulaty.
+# Zastosowanie płyt MDF
+
+## Główne obszary
+
+- Produkcja mebli.
+- Fronty kuchenne i szafy.
+- Elementy dekoracyjne i listwy.
+
+<!--
+Płyty MDF są szeroko stosowane w meblarstwie, szczególnie do produkcji frontów kuchennych, szaf i komód. Dzięki łatwości frezowania nadają się do tworzenia ozdobnych wzorów, takich jak listwy przypodłogowe i panele ścienne. MDF jest często pokrywany fornirem, lakierem lub laminatem, co zwiększa jego estetykę i trwałość. Jego wszechstronność sprawia, że jest to jeden z najpopularniejszych materiałów w branży stolarskiej.
+-->
 
 ---
-
-# Zalety i wady styropianu
-- **Zalety**: doskonała izolacja termiczna, niska waga, łatwość obróbki, niski koszt, odporność na wilgoć i pleśń.
-- **Wady**: mniejsza odporność na ściskanie, potencjalne problemy z recyklingiem, podatność na uszkodzenia przez gryzonie, możliwość uwalniania toksycznych substancji podczas pożaru, niska odporność na promieniowanie UV.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
 ---
 
-# Pianka poliuretanowa
-- Pianka poliuretanowa to wszechstronny materiał.
-- Skład chemiczny obejmuje izocyjaniany i poliole.
-- Rodzaj użytych izocyjanianów i polioli wpływa na końcowe właściwości pianki, takie jak gęstość, twardość, elastyczność i izolacyjność termiczna.
+# Zastosowanie płyt HDF
+
+## Główne obszary
+
+- Podłogi laminowane.
+- Tylne ścianki mebli.
+- Wzmocnienia konstrukcji.
+
+<!--
+Płyty HDF znajdują zastosowanie wszędzie tam, gdzie wymagana jest duża wytrzymałość i cienka forma. Stosowane są w produkcji paneli podłogowych, ponieważ wytrzymują duże obciążenia i są odporne na ścieranie. W meblach służą jako tylne ścianki oraz dna szuflad, co zapewnia konstrukcjom stabilność. Ze względu na swoją twardość, HDF jest także wykorzystywany w przemyśle budowlanym jako wzmocnienie do lekkich konstrukcji.
+-->
 
 ---
-
-# Zastosowania pianki poliuretanowej w budownictwie
-- **Izolacja**: tworzy szczelne uszczelnienie w ścianach, dachach i podłogach.
-- **Uszczelnienie**: skutecznie uszczelnia luki i pęknięcia.
-- **Dźwiękoszczelność**: absorbuje fale dźwiękowe.
-- **Dachy**: zapewnia wodoodporną i izolacyjną warstwę.
-- **Podłogi**: stosowana jako podkład pod podłogi.
-- **Wsparcie strukturalne**: może być używana do wzmocnienia elementów konstrukcyjnych.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
 ---
 
 # Lakiery do drewna
-- **Lakiery poliuretanowe**: tworzą twardą, odporną na zarysowania i wilgoć powłokę.
-- **Lakiery akrylowe**: szybkoschnące, łatwe w aplikacji, dostępne w różnych wykończeniach.
-- **Lakiery nitrocelulozowe**: charakteryzują się wysokim połyskiem, ale są mniej trwałe.
-- **Lakiery olejowe**: wnikają głęboko w drewno, zapewniając naturalny wygląd.
-- **Lakiery wodorozcieńczalne**: ekologiczne, o niskiej zawartości LZO.
-- **Lakiery hybrydowe**: łączą zalety różnych rodzajów lakierów.
+
+## Skład i zastosowanie
+
+- Wytwarzane na bazie żywic syntetycznych lub naturalnych.
+- Chronią drewno przed wilgocią i promieniowaniem UV.
+- Używane w meblach, podłogach i elewacjach.
+
+<!--
+Lakiery do drewna składają się z żywic (np. poliuretanowych, akrylowych), rozpuszczalników i dodatków poprawiających właściwości. Ich główną rolą jest ochrona drewna przed uszkodzeniami mechanicznymi, wilgocią oraz działaniem promieni słonecznych. W zależności od rodzaju wykończenia mogą nadawać powierzchni efekt matowy, półmatowy lub wysoki połysk. Lakiery wodne są bardziej ekologiczne, choć mniej odporne na ścieranie, w porównaniu do lakierów rozpuszczalnikowych.
+-->
+
+
 
 ---
-
-# Właściwości i zastosowania lakierów do drewna
-- Lakiery do drewna są szeroko stosowane w stolarstwie i budownictwie.
-- Chronią i poprawiają wygląd drewnianych powierzchni.
-- Kluczowe właściwości obejmują odporność na ścieranie, ochronę przed wilgocią i odporność na promieniowanie UV.
-- Różne rodzaje lakierów, takie jak poliuretanowe i akrylowe, oferują różne poziomy ochrony i wykończenia.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
 ---
 
-# Płyty meblowe: Rodzaje i skład
-- **Płyta wiórowa**: wykonana z wiórów drzewnych i żywicy, jest opłacalna, ale mniej trwała.
-- **MDF (płyta pilśniowa średniej gęstości)**: wykonana z włókien drzewnych i żywicy, jest gładsza i gęstsza niż płyta wiórowa.
-- **Sklejka**: wykonana z cienkich warstw forniru drzewnego sklejonych ze sobą, jest mocna i wszechstronna.
-- **Płyty melaminowane**: pokryte żywicą melaminową dla trwałości i odporności na zarysowania.
-- **HPL (laminat wysokociśnieniowy)**: wykonany z warstw papieru i żywicy, jest bardzo odporny na zużycie.
-- **Żywice syntetyczne** odgrywają kluczową rolę w wiązaniu materiałów drewnianych w tych płytach.
+# Lakiery akrylowe
+
+## Skład i zastosowanie
+
+- Wytwarzane na bazie żywic akrylowych.
+- Szybkoschnące i odporne na promieniowanie UV.
+- Idealne do drewna wewnątrz pomieszczeń.
+
+<!--
+Lakiery akrylowe składają się z wodnych dyspersji żywic akrylowych. Ich największą zaletą jest brak emisji szkodliwych oparów, dzięki czemu są przyjazne dla środowiska i zdrowia. Lakiery te są bardzo odporne na działanie światła słonecznego, co sprawia, że drewno nie żółknie. Są stosowane głównie w miejscach, gdzie nie występuje intensywne zużycie mechaniczne, takich jak meble, listwy wykończeniowe i elementy dekoracyjne.
+-->
 
 ---
-
-# Płyta wiórowa melaminowana
-- Płyta wiórowa melaminowana (MFC) to materiał kompozytowy wykonany z wiórów drzewnych sklejonych z żywicą i pokryty dekoracyjnym papierem impregnowanym żywicą melaminową.
-- Rdzeń wykonany jest ze sprasowanych wiórów drzewnych.
-- Warstwa żywicy melaminowej dodaje trwałości, odporności na zarysowania i wilgoć.
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-dark.jpg
 ---
 
-# Płyta HPL - skład i zastosowania
-- Laminat wysokociśnieniowy (HPL) składa się z kilku warstw papieru kraft impregnowanego żywicami termoutwardzalnymi, prasowanych pod wysokim ciśnieniem i temperaturą.
-- Powierzchnia dekoracyjna jest zabezpieczona warstwą melaminy.
-- HPL charakteryzuje się wysoką odpornością na ścieranie, uderzenia, wilgoć, chemikalia i wysoką temperaturę.
+# Lakiery poliuretanowe
+
+## Właściwości i zastosowanie
+
+- Oparte na żywicach poliuretanowych.
+- Odporne na ścieranie i wilgoć.
+- Do parkietów, schodów i blatów roboczych.
+
+<!--
+Lakiery poliuretanowe są tworzone z połączenia polioli i izocyjanianów, co nadaje im wyjątkową trwałość i odporność na uszkodzenia mechaniczne. Mogą być jednoskładnikowe (gotowe do użycia) lub dwuskładnikowe (wymagające mieszania przed aplikacją). Stosowane są wszędzie tam, gdzie drewno narażone jest na intensywne użytkowanie, na przykład w podłogach, schodach i blatach kuchennych. Ich wadą jest emisja lotnych związków organicznych podczas schnięcia.
+-->
 
 ---
-
-# Sklejka - Kleje syntetyczne
-- Kleje syntetyczne odgrywają kluczową rolę w produkcji sklejki.
-- Zapewniają niezbędne połączenie, które trzyma warstwy forniru razem.
-- Te kleje są zazwyczaj wykonane z polimerów termoutwardzalnych, takich jak żywice mocznikowo-formaldehydowe (UF), żywice fenolowo-formaldehydowe (PF), żywice melaminowo-formaldehydowe (MF) lub octan poliwinylu (PVA).
-
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-medium.jpg
 ---
 
-# Wpływ tworzyw sztucznych na środowisko
-- Tworzywa sztuczne, takie jak styropian, pianka poliuretanowa, lakiery i płyty meblowe, odgrywają istotną rolę w budownictwie i stolarce.
-- Ich produkcja, użytkowanie i utylizacja mają negatywny wpływ na środowisko.
-- Wytwarzanie tych materiałów często wiąże się z emisją szkodliwych substancji.
-- Niektóre tworzywa sztuczne uwalniają toksyczne związki podczas spalania.
+# Lakiery nitrocelulozowe
+
+## Skład i przeznaczenie
+
+- Na bazie nitrocelulozy i rozpuszczalników organicznych.
+- Szybkoschnące, nadają efekt gładkiej powierzchni.
+- Do mebli i wyrobów dekoracyjnych.
+
+<!--
+Lakiery nitrocelulozowe są znane z krótkiego czasu schnięcia i łatwej aplikacji. Zawierają nitrocelulozę jako główny składnik filmotwórczy oraz rozpuszczalniki organiczne, takie jak aceton czy octan etylu. Stosuje się je głównie w meblarstwie i rzemiośle artystycznym, ponieważ nadają drewnu gładką i estetyczną powierzchnię. Minusem jest niska odporność na wilgoć i ścieranie, co ogranicza ich zastosowanie do wnętrz.
+-->
 
 ---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
+---
 
-# Izolacja z Pianki Celulozowej
-- Naukowcy z Uniwersytetu Stanowego Waszyngton opracowali innowacyjny panel izolacyjny z celulozy.
-- Ta ekologiczna alternatywa dla tradycyjnej izolacji piankowej wykorzystuje nanokryształy celulozy (CNC).
-- To połączenie skutkuje wysokowydajną płytą izolacyjną, która przewyższa nawet piankę polistyrenową pod względem wartości R.
+# Lakiery alkidowe
 
+## Właściwości i zastosowanie
+
+- Oparte na żywicach alkidowych i olejach roślinnych.
+- Elastyczne i odporne na warunki atmosferyczne.
+- Idealne do okien i drzwi zewnętrznych.
+
+<!--
+Lakiery alkidowe powstają na bazie żywic alkidowych, które są modyfikowane olejami roślinnymi, takimi jak olej lniany czy sojowy. Dzięki temu mają wysoką elastyczność i zdolność do pracy wraz z naturalnymi ruchami drewna. Są odporne na działanie czynników atmosferycznych, co czyni je idealnym wyborem do zastosowań zewnętrznych, takich jak okna, drzwi i elewacje drewniane. Wadą jest dłuższy czas schnięcia w porównaniu z lakierami syntetycznymi.
+-->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-dark.jpg
+---
+
+# Lakiery epoksydowe
+
+## Skład i przeznaczenie
+
+- Tworzone na bazie żywic epoksydowych.
+- Bardzo trwałe i odporne na chemikalia.
+- Do powierzchni przemysłowych i wilgotnych.
+
+<!--
+Lakiery epoksydowe składają się z dwóch składników: żywicy epoksydowej i utwardzacza. Po wymieszaniu tworzą bardzo trwałą i odporną na uszkodzenia powłokę. Dzięki swoim właściwościom chemoodpornym stosuje się je w trudnych warunkach, takich jak zakłady przemysłowe, laboratoria oraz pomieszczenia narażone na wilgoć, jak łazienki. Są jednak trudne w aplikacji i wymagają starannego przygotowania powierzchni.
+-->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-medium.jpg
+---
+
+# Bejce nitro
+
+## Właściwości i zastosowanie
+
+- Na bazie nitrocelulozy i barwników.
+- Szybkoschnące, wnikają głęboko w drewno.
+- Podkreślają naturalny rysunek słojów.
+
+<!--
+Bejce nitro to produkty barwiące na bazie rozpuszczalników organicznych, takich jak aceton czy alkohol izopropylowy. Szybko wysychają, co pozwala na szybkie wykończenie powierzchni drewnianych. Dzięki swojej płynnej konsystencji głęboko wnikają w pory drewna, podkreślając jego naturalną strukturę. Są używane głównie w przemyśle meblowym oraz do renowacji elementów dekoracyjnych. Minusem jest intensywny zapach podczas aplikacji i wysoka łatwopalność.
+-->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
+---
+
+# Bejce akrylowe
+
+## Skład i cechy
+
+- Oparte na wodnych dyspersjach akrylowych.
+- Przyjazne środowisku, bez intensywnego zapachu.
+- Do mebli i podłóg.
+
+<!--
+Bejce akrylowe to ekologiczne produkty barwiące, które nie emitują szkodliwych związków organicznych. Są łatwe w aplikacji, a ich schnięcie jest wolniejsze niż bejc nitro, co umożliwia równomierne pokrycie powierzchni. Zawierają pigmenty i wodne dyspersje akrylowe, dzięki czemu można je stosować na różne gatunki drewna. Są idealne do wnętrz, gdzie liczy się bezpieczeństwo użytkowników, np. w pokojach dziecięcych. Ich wodna formuła pozwala na łatwe czyszczenie narzędzi po aplikacji.
+-->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/assembly-foam.jpg
+---
+
+# Pianka montażowa
+
+## Produkcja i właściwości
+
+- Powstaje z poliuretanu (PU).
+- Stosowana do uszczelnień i montażu elementów budowlanych.
+- Doskonała izolacja akustyczna i termiczna.
+
+<!--
+Pianka montażowa jest produkowana z prepolimerów poliuretanowych, które reagują z wilgocią z powietrza, tworząc spienioną strukturę. Dodatek gazów pędnych umożliwia jej aplikację w formie aerozolu. Dzięki elastyczności i zdolności do wypełniania szczelin pianka montażowa jest używana w instalacjach okien, drzwi, izolacji rur i innych pracach budowlanych. Dostępne są różne rodzaje pianek, w tym piany ognioodporne i niskoprężne, które pozwalają na precyzyjną aplikację w wrażliwych miejscach.
+-->
+
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/assembly-foam.jpg
+---
+
+# Pianka jednoskładnikowa
+
+## Właściwości i zastosowanie
+
+- Gotowa do użycia, w sprayu.
+- Rozprężna i łatwa w aplikacji.
+- Uszczelnianie okien, drzwi i szczelin.
+
+<!--
+Pianka jednoskładnikowa to produkt poliuretanowy dostępny w formie aerozolu. W kontakcie z wilgocią atmosferyczną zaczyna się rozprężać i twardnieć, tworząc trwałą uszczelkę. Jest bardzo prosta w użyciu i nie wymaga dodatkowych składników, co czyni ją popularnym rozwiązaniem w pracach budowlanych. Stosuje się ją głównie do montażu okien i drzwi, wypełniania szczelin oraz izolacji termicznej i akustycznej. Jej ograniczeniem jest mniejsza odporność na wysokie temperatury w porównaniu z piankami dwuskładnikowymi.
+-->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/assembly-foam.jpg
+---
+
+# Pianka dwuskładnikowa
+
+## Właściwości i zastosowanie
+
+- Składa się z poliolu i izocyjanianu.
+- Większa wytrzymałość i kontrolowana rozprężność.
+- Do izolacji termicznej i przemysłowej.
+
+<!--
+Pianka dwuskładnikowa wymaga zmieszania dwóch składników: poliolu i izocyjanianu. Proces mieszania odbywa się w specjalnym aplikatorze, co umożliwia dokładne kontrolowanie właściwości pianki. W porównaniu z wersją jednoskładnikową jest bardziej wytrzymała i odporna na działanie wysokich temperatur oraz czynników chemicznych. Pianki dwuskładnikowe stosowane są głównie w izolacjach przemysłowych, przy ocieplaniu dachów, ścian i fundamentów, a także w produkcji elementów technicznych, takich jak panele czy uszczelki.
+-->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/pink-styrodur.jpg
+---
+
+# Profile PVC
+
+## Produkcja i zastosowanie
+
+- Powstają z polichlorku winylu (PVC).
+- Stosowane w oknach, drzwiach i fasadach.
+- Odporne na warunki atmosferyczne i korozję.
+
+<!--
+Profile PVC są produkowane poprzez proces wytłaczania (ekstruzji), w którym stopiony polichlorek winylu jest formowany w kształt odpowiednich profili. Dzięki dodatkom, takim jak stabilizatory UV, zmiękczacze i pigmenty, profile te charakteryzują się wysoką odpornością na działanie promieni słonecznych, zmienne warunki atmosferyczne oraz korozję. PVC jest materiałem łatwym w utrzymaniu i recyklingu, co czyni go ekologicznym wyborem w nowoczesnym budownictwie.
+-->
