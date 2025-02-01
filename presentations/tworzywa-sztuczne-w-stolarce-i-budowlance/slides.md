@@ -1,12 +1,12 @@
 ---
-theme: light-icons #purplin 
+theme: purplin 
 title: Tworzywa sztuczne w budowlance i stolarce
 class: text-center
 drawings:
   persist: false
 defaults:
   transition: slide-left
-  layout: image-right #image-x 
+  layout: image-x 
   image: https://baconmockup.com/300/600
 mdc: true
 image: https://cooligus.s3.eu-central-1.amazonaws.com/styrofoam.jpg
@@ -47,36 +47,37 @@ Styrodur powstaje przez wytłaczanie polistyrenu pod wysokim ciśnieniem i w kon
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 ---
 
-# Płyty HPL
+# Płyta wiórowa
 
-## Produkcja i zastosowanie
+## Skład i produkcja
 
-- Powstają z warstw papieru impregnowanego żywicami fenolowymi.
-- Używane w elewacjach, blatach i meblach.
-- Odporne na wilgoć i uszkodzenia mechaniczne.
+- Wióry drzewne sprasowane z żywicami.
+- Tworzone pod wysokim ciśnieniem i temperaturą.
+- Ekonomiczny i wszechstronny materiał.
 
 <!--
-Płyty HPL (High Pressure Laminate) są produkowane poprzez prasowanie pod wysokim ciśnieniem i w wysokiej temperaturze kilku warstw papieru nasączonego żywicami. Wierzchnia warstwa dekoracyjna jest pokrywana melaminą, co nadaje estetyczny wygląd i odporność na zarysowania, wilgoć i chemikalia. Są używane zarówno w budownictwie, jak i w przemyśle meblowym, gdzie wymagane są materiały wytrzymałe i łatwe w utrzymaniu. W przypadku płyt elewacyjnych HPL oferują szeroki wybór kolorów i faktur, umożliwiając ich wykorzystanie w nowoczesnych projektach architektonicznych.
+Płyta wiórowa to materiał kompozytowy produkowany przez sprasowanie wiórów drzewnych z dodatkiem żywic syntetycznych. Proces produkcji polega na równomiernym rozmieszczeniu wiórów w trzech warstwach, co zapewnia odpowiednią wytrzymałość i stabilność. Następnie całość jest prasowana w wysokiej temperaturze i pod dużym ciśnieniem. Ze względu na niski koszt produkcji i dobre właściwości mechaniczne, płyty wiórowe są szeroko stosowane w przemyśle meblarskim oraz budownictwie. Ich główną wadą jest niska odporność na wilgoć, dlatego często pokrywa się je laminatem lub fornirem.
 -->
 
 ---
 image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 ---
 
-# Płyty meblowe
+# Zastosowanie płyt wiórowych
 
-## Kleje stosowane w produkcji
+## Główne obszary
 
-- Łączenie za pomocą klejów na bazie mocznika i formaldehydu.
-- Wykorzystywane w meblach domowych i biurowych.
-- Ekonomiczne i łatwe w obróbce.
+- Meble i elementy wnętrz.
+- Podłogi i ściany w budownictwie.
+- Blaty robocze i panele dekoracyjne.
 
 <!--
-Płyty meblowe są produkowane poprzez sprasowanie wiórów drzewnych lub włókien, które są łączone za pomocą żywic syntetycznych, takich jak żywice mocznikowo-formaldehydowe. Kleje te zapewniają trwałość i sztywność płyt, ale mogą emitować formaldehyd, co wymaga stosowania materiałów o niskiej emisji w celu spełnienia norm środowiskowych. Płyty meblowe mogą być pokrywane laminatem, melaminą lub fornirem, co pozwala na ich szerokie zastosowanie w produkcji mebli i wykończenia wnętrz.
+Płyty wiórowe są szeroko stosowane w przemyśle meblarskim, szczególnie w produkcji szaf, stołów i regałów. Dzięki łatwości obróbki i możliwości pokrycia laminatem lub okleiną, stanowią popularne rozwiązanie w ekonomicznych zestawach meblowych. W budownictwie wykorzystuje się je do tworzenia lekkich ścianek działowych oraz podkładów podłogowych. Są również używane do produkcji blatów kuchennych oraz paneli ściennych, gdzie dodatkowa powłoka zabezpiecza je przed wilgocią i uszkodzeniami mechanicznymi.
 -->
+
 
 ---
 image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
@@ -88,26 +89,9 @@ image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 
 - Włókna drzewne sprasowane z żywicami.
 - Gładka powierzchnia, łatwa w obróbce.
-- Idealne do mebli i elementów dekoracyjnych.
 
 <!--
 Płyty MDF (Medium Density Fiberboard) powstają przez sprasowanie włókien drzewnych z dodatkiem żywic syntetycznych pod wysokim ciśnieniem i temperaturą. Dzięki swojej gładkiej i jednorodnej strukturze są łatwe do cięcia, frezowania i malowania. MDF jest szeroko stosowany w produkcji mebli, paneli ściennych oraz elementów wykończeniowych. Główną wadą jest podatność na wilgoć, dlatego do zastosowań w wilgotnym środowisku stosuje się wersje wilgocioodporne.
--->
-
----
-image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
----
-
-# Płyty HDF
-
-## Skład i cechy
-
-- Wysoka gęstość włókien drzewnych i żywic.
-- Bardzo twarde i wytrzymałe.
-- Do podłóg laminowanych i tylnej części mebli.
-
-<!--
-Płyty HDF (High Density Fiberboard) to materiał o jeszcze większej gęstości niż MDF, co czyni je niezwykle wytrzymałymi na uszkodzenia mechaniczne. Są cienkie, ale bardzo twarde, dzięki czemu idealnie nadają się na tylne ścianki mebli, dna szuflad oraz jako podkłady podłogowe w panelach laminowanych. Podobnie jak MDF, HDF nie radzi sobie dobrze z wodą, ale często są laminowane, co zwiększa ich odporność. W ich produkcji stosuje się zaawansowane żywice syntetyczne.
 -->
 
 ---
@@ -121,10 +105,27 @@ image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 - Produkcja mebli.
 - Fronty kuchenne i szafy.
 - Elementy dekoracyjne i listwy.
+- Idealne do mebli i elementów dekoracyjnych.
 
 <!--
 Płyty MDF są szeroko stosowane w meblarstwie, szczególnie do produkcji frontów kuchennych, szaf i komód. Dzięki łatwości frezowania nadają się do tworzenia ozdobnych wzorów, takich jak listwy przypodłogowe i panele ścienne. MDF jest często pokrywany fornirem, lakierem lub laminatem, co zwiększa jego estetykę i trwałość. Jego wszechstronność sprawia, że jest to jeden z najpopularniejszych materiałów w branży stolarskiej.
 -->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
+---
+
+# Płyty HDF
+
+## Skład i cechy
+
+- Wysoka gęstość włókien drzewnych i żywic.
+- Bardzo twarde i wytrzymałe.
+
+<!--
+Płyty HDF (High Density Fiberboard) to materiał o jeszcze większej gęstości niż MDF, co czyni je niezwykle wytrzymałymi na uszkodzenia mechaniczne. Są cienkie, ale bardzo twarde, dzięki czemu idealnie nadają się na tylne ścianki mebli, dna szuflad oraz jako podkłady podłogowe w panelach laminowanych. Podobnie jak MDF, HDF nie radzi sobie dobrze z wodą, ale często są laminowane, co zwiększa ich odporność. W ich produkcji stosuje się zaawansowane żywice syntetyczne.
+-->
+
 
 ---
 image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
@@ -134,13 +135,30 @@ image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
 
 ## Główne obszary
 
-- Podłogi laminowane.
+- Panele laminowane.
 - Tylne ścianki mebli.
-- Wzmocnienia konstrukcji.
 
 <!--
 Płyty HDF znajdują zastosowanie wszędzie tam, gdzie wymagana jest duża wytrzymałość i cienka forma. Stosowane są w produkcji paneli podłogowych, ponieważ wytrzymują duże obciążenia i są odporne na ścieranie. W meblach służą jako tylne ścianki oraz dna szuflad, co zapewnia konstrukcjom stabilność. Ze względu na swoją twardość, HDF jest także wykorzystywany w przemyśle budowlanym jako wzmocnienie do lekkich konstrukcji.
 -->
+
+---
+image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
+---
+
+# Płyty HPL
+
+## Produkcja i zastosowanie
+
+- Powstają z warstw laminatu impregnowanego żywicami fenolowymi.
+- Używane w elewacjach, blatach i meblach.
+- Odporne na wilgoć i uszkodzenia mechaniczne.
+- Cena: koło 600 ziko/m<sup>2</sup>
+
+<!--
+Płyty HPL (High Pressure Laminate) są produkowane poprzez prasowanie pod wysokim ciśnieniem i w wysokiej temperaturze kilku warstw papieru nasączonego żywicami. Wierzchnia warstwa dekoracyjna jest pokrywana melaminą, co nadaje estetyczny wygląd i odporność na zarysowania, wilgoć i chemikalia. Są używane zarówno w budownictwie, jak i w przemyśle meblowym, gdzie wymagane są materiały wytrzymałe i łatwe w utrzymaniu. W przypadku płyt elewacyjnych HPL oferują szeroki wybór kolorów i faktur, umożliwiając ich wykorzystanie w nowoczesnych projektach architektonicznych.
+-->
+
 
 ---
 image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
