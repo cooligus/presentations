@@ -1,15 +1,10 @@
 ---
 theme: purplin 
 title: Tworzywa sztuczne w budowlance i stolarce
-class: text-center
-drawings:
-  persist: false
 defaults:
   transition: slide-left
   layout: image-x 
-  image: https://baconmockup.com/300/600
-mdc: true
-image: https://cooligus.s3.eu-central-1.amazonaws.com/styrofoam.jpg
+  image: https://cooligus.s3.eu-central-1.amazonaws.com/plaster.jpg
 ---
 
 # Tworzywa sztuczne w budowlance i stolarce

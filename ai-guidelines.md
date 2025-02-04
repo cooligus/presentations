@@ -26,6 +26,7 @@ List of names:
 - pink-styrodur.jpg
 - styrofoam.jpg
 - varnished-board-dark.jpg
+- plaster.jpg
 
 Presentation settings:
 - If any name in list of names matches slide's content instead of forehead A use forehead B
