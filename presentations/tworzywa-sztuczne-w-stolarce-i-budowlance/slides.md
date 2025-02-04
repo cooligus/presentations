@@ -4,7 +4,7 @@ title: Tworzywa sztuczne w budowlance i stolarce
 defaults:
   transition: slide-left
   layout: image-x 
-  image: https://cooligus.s3.eu-central-1.amazonaws.com/plaster.jpg
+  image: https://cooligus.s3.eu-central-1.amazonaws.com/yellow-styrodur.jpg
 ---
 
 # Tworzywa sztuczne w budowlance i stolarce
@@ -18,7 +18,7 @@ image: https://cooligus.s3.eu-central-1.amazonaws.com/styrofoam.jpg
 ## Sposób produkcji i zastosowanie
 
 - Powstaje z polistyrenu ekspandowanego (EPS).
-- Używany w izolacji cieplnej ścian, dachów i fundamentów.
+- Używany w izolacji cieplnej ścian.
 - Lekki, łatwy w obróbce i montażu.
 
 <!--
@@ -26,7 +26,7 @@ Styropian jest produkowany przez ekspandowanie granulek polistyrenu przy użyciu
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/yellow-styrodur.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/pink-styrodur.jpg
 ---
 
 # Styrodur
@@ -49,7 +49,7 @@ image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 
 ## Skład i produkcja
 
-- Wióry drzewne sprasowane z żywicami.
+- Wióry drzewne sprasowane z żywicami syntetycznymi.
 - Tworzone pod wysokim ciśnieniem i temperaturą.
 - Ekonomiczny i wszechstronny materiał.
 
@@ -67,7 +67,7 @@ image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
 
 - Meble i elementy wnętrz.
 - Podłogi i ściany w budownictwie.
-- Blaty robocze i panele dekoracyjne.
+- Blaty robocze.
 
 <!--
 Płyty wiórowe są szeroko stosowane w przemyśle meblarskim, szczególnie w produkcji szaf, stołów i regałów. Dzięki łatwości obróbki i możliwości pokrycia laminatem lub okleiną, stanowią popularne rozwiązanie w ekonomicznych zestawach meblowych. W budownictwie wykorzystuje się je do tworzenia lekkich ścianek działowych oraz podkładów podłogowych. Są również używane do produkcji blatów kuchennych oraz paneli ściennych, gdzie dodatkowa powłoka zabezpiecza je przed wilgocią i uszkodzeniami mechanicznymi.
@@ -75,7 +75,7 @@ Płyty wiórowe są szeroko stosowane w przemyśle meblarskim, szczególnie w pr
 
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/mdf-board.jpg
 ---
 
 # Płyty MDF
@@ -90,7 +90,7 @@ Płyty MDF (Medium Density Fiberboard) powstają przez sprasowanie włókien drz
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/mdf-board.jpg
 ---
 
 # Zastosowanie płyt MDF
@@ -107,7 +107,7 @@ Płyty MDF są szeroko stosowane w meblarstwie, szczególnie do produkcji front�
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/furniture-board.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/hdf-board.jpg
 ---
 
 # Płyty HDF
@@ -123,7 +123,7 @@ Płyty HDF (High Density Fiberboard) to materiał o jeszcze większej gęstości
 
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/hpl-board.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/hdf-board.jpg
 ---
 
 # Zastosowanie płyt HDF
@@ -156,7 +156,7 @@ Płyty HPL (High Pressure Laminate) są produkowane poprzez prasowanie pod wysok
 
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-medium.jpg
 ---
 
 # Lakiery do drewna
@@ -206,7 +206,7 @@ Lakiery poliuretanowe są tworzone z połączenia polioli i izocyjanianów, co n
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-medium.jpg
+layout: cover
 ---
 
 # Lakiery nitrocelulozowe
@@ -215,14 +215,14 @@ image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-medium.jpg
 
 - Na bazie nitrocelulozy i rozpuszczalników organicznych.
 - Szybkoschnące, nadają efekt gładkiej powierzchni.
-- Do mebli i wyrobów dekoracyjnych.
+- Do instrumentów.
 
 <!--
 Lakiery nitrocelulozowe są znane z krótkiego czasu schnięcia i łatwej aplikacji. Zawierają nitrocelulozę jako główny składnik filmotwórczy oraz rozpuszczalniki organiczne, takie jak aceton czy octan etylu. Stosuje się je głównie w meblarstwie i rzemiośle artystycznym, ponieważ nadają drewnu gładką i estetyczną powierzchnię. Minusem jest niska odporność na wilgoć i ścieranie, co ogranicza ich zastosowanie do wnętrz.
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
+layout: cover
 ---
 
 # Lakiery alkidowe
@@ -238,7 +238,7 @@ Lakiery alkidowe powstają na bazie żywic alkidowych, które są modyfikowane o
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-dark.jpg
+layout: cover
 ---
 
 # Lakiery epoksydowe
@@ -254,7 +254,7 @@ Lakiery epoksydowe składają się z dwóch składników: żywicy epoksydowej i 
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-medium.jpg
+image: https://cooligus.s3.eu-central-1.amazonaws.com/multi-varnished-board.jpg
 ---
 
 # Bejce nitro
@@ -270,7 +270,7 @@ Bejce nitro to produkty barwiące na bazie rozpuszczalników organicznych, takic
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/varnished-board-light.jpg
+layout: cover
 ---
 
 # Bejce akrylowe
@@ -319,7 +319,7 @@ Pianka jednoskładnikowa to produkt poliuretanowy dostępny w formie aerozolu. W
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/assembly-foam.jpg
+layout: cover
 ---
 
 # Pianka dwuskładnikowa
@@ -335,7 +335,7 @@ Pianka dwuskładnikowa wymaga zmieszania dwóch składników: poliolu i izocyjan
 -->
 
 ---
-image: https://cooligus.s3.eu-central-1.amazonaws.com/pink-styrodur.jpg
+layout: cover
 ---
 
 # Profile PVC
