@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DBApp.Models" 
+             x:Class="DBApp.Views.FavouriteFoodPage"
+             Appearing="OnAppearing"
+             Title="Favourite Foods">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Select Food" />
+            <Picker Title="Food" 
+                    SelectedItem="{Binding SelectedFood}" 
+                    ItemsSource="{Binding Foods}" 
+                    ItemDisplayBinding="{Binding Name}" />
+
+            <Label Text="Select Client" />
+            <Picker Title="Client" 
+                    SelectedItem="{Binding SelectedClient}" 
+                    ItemsSource="{Binding Clients}" 
+                    ItemDisplayBinding="{Binding Name}" />
+
+            <Button Text="Add to Favourites" Command="{Binding AddFavouriteFoodCommand}" />
+
+            <Label Text="Favourite Foods" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0"/>
+            <CollectionView ItemsSource="{Binding FavouriteFoods}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" Orientation="Horizontal">
+                            <Label Text="{Binding Client.Name}" FontSize="Medium" />
+                            <Label Text="{Binding Client.Surname}" FontSize="Large" />
+                            <Label Text="{Binding Food.Name}" TextColor="DarkGreen" FontSize="Large" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

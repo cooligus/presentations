@@ -1,5 +1,6 @@
 ---
 theme: seriph
+monaco: true
 background: https://cover.sli.dev
 title: DB i Collection View
 class: text-center
@@ -14,93 +15,141 @@ defaults:
 # DB i Collection View
 
 ---
+layout: section
+---
+
+# MODELS
+Shiki magic move
+
+---
 layout: image-right
 image: https://cover.sli.dev
 ---
 
-# Code
-
-<<< @/snippets/external.ts#snippet
-
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
+## FoodModel
+Określa co jest w tabeli jedzenia
 
 ---
+layout: image-right
+image: https://cover.sli.dev
+---
 
-# Monaco Editor
 
-Slidev provides built-in Monaco Editor support.
+## ClientModel
+Określa co jest w tabeli klienci
 
-Add `{monaco}` to the code block to turn it into an editor:
+---
+layout: image-right
+image: https://cover.sli.dev
+--- 
 
-```csharp {monaco}
-```
+## FavouriteFoodModel
+Określa co jest w tabeli relacji n-n jedzenie-klient
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+# DB
+połączenie z bazą danych
+
+---
+layout: section
+---
+
+# SERVICES
+Shiki magic move
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## FoodService
+zarządzanie tabelą jedzenia
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## ClientService
+zarządzanie tabelą klienta
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## FavouriteFood
+zarządzanie tabelą relacji n-n jedzenie-klient
+
+---
+layout: section
+---
+
+# VIEWMODELS
+Shiki magic move
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## FoodViewModel
+Logika
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## ClientViewModel
+Logika
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## FavouriteFoodViewModel
+Logika
+
+---
+layout: section
+---
+
+# VIEWS
+Shiki magic move
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+## FoodPage
+Guziki(insert), CollectionView
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## ClientPage
+Guziki(insert), CollectionView
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+## FavouriteFoodPage
+Guziki(insert), CollectionView
+
+---
+background: https://cover.sli.dev
+class: text-center
+layout: cover
+---
+
+# Dziękuję za uwagę

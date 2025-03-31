@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DBApp.Views.ClientPage"
+             Title="Clients">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Client Name" />
+            <Entry Text="{Binding ClientName}" Placeholder="Enter client name" />
+
+            <Label Text="Client Surname" />
+            <Entry Text="{Binding ClientSurname}" Placeholder="Enter client surname" />
+
+            <Button Text="Add Client" Command="{Binding AddClientCommand}" />
+
+            <Label Text="Clients List" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0"/>
+            <CollectionView ItemsSource="{Binding Clients}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" Orientation="Horizontal">
+                            <Label Text="{Binding Name}" FontSize="Medium" />
+                            <Label Text="{Binding Surname}" FontSize="Medium" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

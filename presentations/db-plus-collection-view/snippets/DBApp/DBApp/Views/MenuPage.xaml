@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:DBApp.Views"
+             x:Class="DBApp.Views.MenuPage">
+    <local:ClientPage Title="Klienci"></local:ClientPage>
+    <local:FoodPage Title="Jedzenie"></local:FoodPage>
+    <local:FavouriteFoodPage Title="Ulubione jedzenie"></local:FavouriteFoodPage>
+</TabbedPage>
