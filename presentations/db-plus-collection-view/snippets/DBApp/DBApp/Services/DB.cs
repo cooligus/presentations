@@ -7,6 +7,7 @@ using SQLite;
 
 namespace DBApp.Services
 {
+    // #region snippet
     public class DB
     {
         protected SQLiteAsyncConnection _database { get; }
@@ -17,4 +18,5 @@ namespace DBApp.Services
             _database = new SQLiteAsyncConnection(path);
         }
     }
+    // #endregion snippet
 }

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace DBApp.Models
 {
+    // #region snippet
     [Table("FavouriteFood")]
     public class FavouriteFood
     {
@@ -24,4 +25,5 @@ namespace DBApp.Models
         [Ignore]
         public Client Client { get; set; }
     }
+    // #endregion snippet
 }

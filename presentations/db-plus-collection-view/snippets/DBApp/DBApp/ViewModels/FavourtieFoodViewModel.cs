@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DBApp.ViewModels
 {
+    // #region selectedFood
     public class FavouriteFoodViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<FavouriteFood> FavouriteFoods { get; set; }
@@ -26,7 +27,11 @@ namespace DBApp.ViewModels
                 OnPropertyChanged(nameof(SelectedFood));
             }
         }
-
+    }
+    // #endregion selectedFood
+    // #region selectedClient
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         private Client _selectedClient;
         public Client SelectedClient
         {
@@ -37,7 +42,11 @@ namespace DBApp.ViewModels
                 OnPropertyChanged(nameof(SelectedClient));
             }
         }
-
+    }
+    // #endregion selectedClient
+    // #region constructor
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         private readonly FavouriteFoodService _favouriteFoodService;
         private readonly FoodService _foodService;
         private readonly ClientService _clientService;
@@ -56,14 +65,22 @@ namespace DBApp.ViewModels
 
             LoadData();
         }
-
+    }
+    // #endregion constructor
+    // #region loadData
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         private async void LoadData()
         {
             await LoadFoods();
             await LoadClients();
             await LoadFavouriteFoods();
         }
-
+    }
+    // #endregion loadData
+    // #region loadFood
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         private async Task LoadFoods()
         {
             var foods = await _foodService.GetFoodsAsync();
@@ -73,7 +90,11 @@ namespace DBApp.ViewModels
                 Foods.Add(food);
             }
         }
-
+    }
+    // #endregion loadFood
+    // #region loadClient
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         private async Task LoadClients()
         {
             var clients = await _clientService.GetClientsAsync();
@@ -83,7 +104,11 @@ namespace DBApp.ViewModels
                 Clients.Add(client);
             }
         }
-
+    }
+    // #endregion loadClient
+    // #region loadFavFood
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         private async Task LoadFavouriteFoods()
         {
             var favouriteFoods = await _favouriteFoodService.GetFavouriteFoodsAsync();
@@ -93,7 +118,11 @@ namespace DBApp.ViewModels
                 FavouriteFoods.Add(favouriteFood);
             }
         }
-
+    }
+    // #endregion loadFavFood
+    // #region addFavFood
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         private async Task AddFavouriteFood()
         {
             if (SelectedFood != null && SelectedClient != null)
@@ -105,11 +134,16 @@ namespace DBApp.ViewModels
                 SelectedClient = null; // Reset selection
             }
         }
-
+    }
+    // #endregion addFavFood
+    // #region onPropertyChanged
+    public class FavouriteFoodViewModel : INotifyPropertyChanged
+    {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+    // #endregion onPropertyChanged
 }

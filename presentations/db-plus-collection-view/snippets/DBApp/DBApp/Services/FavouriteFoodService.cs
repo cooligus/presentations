@@ -6,13 +6,18 @@ using System.Linq;
 
 namespace DBApp.Services
 {
+    // #region constructor
     public class FavouriteFoodService : DB
     {
         public FavouriteFoodService()
         {
             _database.CreateTableAsync<FavouriteFood>().Wait();
         }
-
+    }
+    // #endregion constructor
+    // #region get
+    public class FavouriteFoodService : DB
+    {
         // Get all favourite foods
         public async Task<List<FavouriteFood>> GetFavouriteFoodsAsync()
         {
@@ -31,7 +36,11 @@ namespace DBApp.Services
 
             return favouriteFoods;
         }
-
+    }
+    // #endregion get
+    // #region save
+    public class FavouriteFoodService : DB
+    {
         // Add a new favourite food
         public Task<int> SaveFavouriteFoodAsync(FavouriteFood favouriteFood)
         {
@@ -39,17 +48,26 @@ namespace DBApp.Services
             favouriteFood.FoodId = favouriteFood.Food.Id;
             return _database.InsertAsync(favouriteFood);
         }
-
+    }
+    // #endregion save
+    // #region update
+    public class FavouriteFoodService : DB
+    {
         // Update an existing favourite food
         public Task<int> UpdateFavouriteFoodAsync(FavouriteFood favouriteFood)
         {
             return _database.UpdateAsync(favouriteFood);
         }
-
+    }
+    // #endregion update
+    // #region delete
+    public class FavouriteFoodService : DB
+    {
         // Delete a favourite food
         public Task<int> DeleteFavouriteFoodAsync(FavouriteFood favouriteFood)
         {
             return _database.DeleteAsync(favouriteFood);
         }
     }
+    // #endregion delete
 }

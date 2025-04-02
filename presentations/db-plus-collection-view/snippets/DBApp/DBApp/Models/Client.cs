@@ -5,6 +5,7 @@ using System.Text;
 
 namespace DBApp.Models
 {
+    // #region snippet
     [Table("Client")]
     public class Client
     {
@@ -16,4 +17,5 @@ namespace DBApp.Models
         [Column("surname")]
         public string Surname { set; get; }
     }
+    // #endregion snippet
 }

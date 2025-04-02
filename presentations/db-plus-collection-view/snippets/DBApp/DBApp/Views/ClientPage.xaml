@@ -5,6 +5,7 @@
              Title="Clients">
     <ContentPage.Content>
         <StackLayout Padding="10">
+            // #region insert
             <Label Text="Client Name" />
             <Entry Text="{Binding ClientName}" Placeholder="Enter client name" />
 
@@ -14,6 +15,8 @@
             <Button Text="Add Client" Command="{Binding AddClientCommand}" />
 
             <Label Text="Clients List" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0"/>
+            // #endregion insert
+            // #region view
             <CollectionView ItemsSource="{Binding Clients}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -24,6 +27,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            // #endregion view
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

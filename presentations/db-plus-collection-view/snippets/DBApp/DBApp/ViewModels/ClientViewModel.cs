@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DBApp.ViewModels
 {
+    // #region clientName
     public class ClientViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<Client> Clients { get; set; }
@@ -23,7 +24,11 @@ namespace DBApp.ViewModels
                 OnPropertyChanged(nameof(ClientName));
             }
         }
-
+    }
+    // #endregion clientName
+    // #region clientSurname
+    public class ClientViewModel : INotifyPropertyChanged
+    {
         private string _clientSurname;
         public string ClientSurname
         {
@@ -34,7 +39,11 @@ namespace DBApp.ViewModels
                 OnPropertyChanged(nameof(ClientSurname));
             }
         }
-
+    }
+    // #endregion clientSurname
+    // #region constructor
+    public class ClientViewModel : INotifyPropertyChanged
+    {
         private readonly ClientService _clientService;
         
         public ClientViewModel()
@@ -45,7 +54,11 @@ namespace DBApp.ViewModels
             _clientService = new ClientService();
             LoadClients();
         }
-
+    }
+    // #endregion constructor
+    // #region loadClient
+    public class ClientViewModel : INotifyPropertyChanged
+    {
         private async void LoadClients()
         {
             var clients = await _clientService.GetClientsAsync();
@@ -55,7 +68,11 @@ namespace DBApp.ViewModels
                 Clients.Add(client);
             }
         }
-
+    }
+    // #endregion loadClient
+    // #region addClient
+    public class ClientViewModel : INotifyPropertyChanged
+    {
         private async Task AddClient()
         {
             if (!string.IsNullOrWhiteSpace(ClientName) && !string.IsNullOrWhiteSpace(ClientSurname))
@@ -72,11 +89,16 @@ namespace DBApp.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error", "Please enter both name and surname.", "OK");
             }
         }
-        
+    }
+    // #endregion addClient
+    // #region onPropertyChanged
+    public class ClientViewModel : INotifyPropertyChanged
+    {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+    // #endregion onPropertyChanged
 }

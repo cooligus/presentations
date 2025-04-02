@@ -5,6 +5,7 @@
              Title="Food Management">
 
     <StackLayout Padding="10">
+        // #region insert
         <Label Text="Food Name" FontSize="Medium" />
         <Entry Text="{Binding FoodName}" Placeholder="Enter food name" />
 
@@ -22,6 +23,8 @@
                 TextColor="White" />
 
         <Label Text="Food List" FontSize="Medium" Margin="0,20,0,0" />
+        // #endregion insert
+        // #region view
         <CollectionView ItemsSource="{Binding Foods}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -33,5 +36,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        // #endregion view
     </StackLayout>
 </ContentPage>

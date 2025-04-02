@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace DBApp.Models
-{   
+{
+    // #region snippet
     public enum FoodType
     {
         Vegetable, Fruit, Seafood, Meat
@@ -22,4 +23,5 @@ namespace DBApp.Models
         [Column("type")]
         public FoodType Type { get; set; }
     }
+    // #endregion snippet
 }
