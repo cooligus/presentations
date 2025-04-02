@@ -14,14 +14,14 @@ defaults:
 
 ---
 layout: section
-transition: slide-left\
+transition: slide-left
 ---
 
 # MODELS
 
 ---
 layout: image-right
-image: snippets/DBApp/DBApp.Android/Resources/drawable/icon_food.png
+image: https://baconmockup.com/999/2000
 transition: slide-right
 ---
 
@@ -32,7 +32,7 @@ Określa co jest w tabeli jedzenia
 
 ---
 layout: image-left
-image: snippets/DBApp/DBApp.Android/Resources/drawable/icon_client.png
+image: https://baconmockup.com/998/2000
 transition: slide-left
 ---
 
@@ -43,7 +43,7 @@ Określa co jest w tabeli klientów
 
 ---
 layout: image-right
-image: snippets/DBApp/DBApp.Android/Resources/drawable/icon_favourite.png
+image: https://baconmockup.com/1003/2000
 --- 
 
 ## FavouriteFoodModel
