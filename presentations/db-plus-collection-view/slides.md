@@ -5,102 +5,245 @@ title: DB i Collection View
 class: text-center
 drawings:
   persist: false
-transition: fade
 mdc: true
 defaults:
-  transition: slide-left
+  transition: fade
 ---
 
 # DB i Collection View
 
 ---
+layout: section
+transition: slide-left\
+---
+
+# MODELS
+
+---
 layout: image-right
-image: https://cover.sli.dev
+image: snippets/DBApp/DBApp.Android/Resources/drawable/icon_food.png
+transition: slide-right
 ---
 
-# Code
+## FoodModel
+Określa co jest w tabeli jedzenia
 
-<<< @/snippets/external.ts#snippet
+<<< @/snippets/DBApp/DBApp/Models/Food.cs#snippet csharp {monaco}
 
 ---
+layout: image-left
+image: snippets/DBApp/DBApp.Android/Resources/drawable/icon_client.png
+transition: slide-left
+---
 
-# Shiki Magic Move
+## ClientModel
+Określa co jest w tabeli klientów
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+<<< @/snippets/DBApp/DBApp/Models/Client.cs#snippet csharp {monaco}
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+---
+layout: image-right
+image: snippets/DBApp/DBApp.Android/Resources/drawable/icon_favourite.png
+--- 
 
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
+## FavouriteFoodModel
+Określa co jest w tabeli relacji jedzenie-klient
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
+<<< @/snippets/DBApp/DBApp/Models/FavouriteFood.cs#snippet csharp {monaco}
 
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
+---
+layout: section
+transition: slide-left
+---
 
-Non-code blocks are ignored.
+# SERVICES
 
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
+---
+transition: slide-right
+---
+
+## DB
+Połączenie z bazą danych
+
+<<< @/snippets/DBApp/DBApp/Services/DB.cs#snippet csharp {monaco}
+
+---
+layout: image-left
+image: https://baconmockup.com/1000/2000
+transition: slide-left
+fonts:
+    sans: Robot
+    serif: Robot Slab
+    mono: Fira Code
+---
+
+## FoodService
+Zarządzanie tabelą jedzenia ze strony backend
+
+````md magic-move {class:'w-100'}
+<<< @/snippets/DBApp/DBApp/Services/FoodService.cs#constructor csharp
+<<< @/snippets/DBApp/DBApp/Services/FoodService.cs#get csharp
+<<< @/snippets/DBApp/DBApp/Services/FoodService.cs#save csharp
+<<< @/snippets/DBApp/DBApp/Services/FoodService.cs#update csharp
+<<< @/snippets/DBApp/DBApp/Services/FoodService.cs#delete csharp
+````
+
+---
+layout: image-right
+image: https://baconmockup.com/1001/2002
+transition: slide-right
+---
+
+## ClientService
+Zarządzanie tabelą klienta ze strony backend
+
+````md magic-move {class:'w-105'}
+<<< @/snippets/DBApp/DBApp/Services/ClientService.cs#constructor csharp
+<<< @/snippets/DBApp/DBApp/Services/ClientService.cs#get csharp
+<<< @/snippets/DBApp/DBApp/Services/ClientService.cs#save csharp
+<<< @/snippets/DBApp/DBApp/Services/ClientService.cs#update csharp
+<<< @/snippets/DBApp/DBApp/Services/ClientService.cs#delete csharp
+````
+
+---
+layout: intro
+---
+
+## FavouriteFood
+Zarządzanie tabelą relacji jedzenie-klient ze strony backend
+
+````md magic-move
+<<< @/snippets/DBApp/DBApp/Services/FavouriteFoodService.cs#constructor csharp
+<<< @/snippets/DBApp/DBApp/Services/FavouriteFoodService.cs#get csharp
+<<< @/snippets/DBApp/DBApp/Services/FavouriteFoodService.cs#save csharp
+<<< @/snippets/DBApp/DBApp/Services/FavouriteFoodService.cs#update csharp
+<<< @/snippets/DBApp/DBApp/Services/FavouriteFoodService.cs#delete csharp
+````
+
+---
+layout: section
+transition: slide-up
+---
+
+# VIEWMODELS
+
+---
+transition: slide-up
+---
+
+## FoodViewModel
+Pobiera dane z FoodPage za pomocą bindingu i przekazuje do modelu Food
+
+````md magic-move
+<<< @/snippets/DBApp/DBApp/ViewModels/FoodViewModel.cs#onPropertyChangedInt csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FoodViewModel.cs#inStockInt csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FoodViewModel.cs#foodTypeInt csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FoodViewModel.cs#constructor csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FoodViewModel.cs#loadFood csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FoodViewModel.cs#addFood csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FoodViewModel.cs#onPropertyChanged csharp
+````
+
+---
+transition: slide-up
+---
+
+## ClientViewModel
+Pobiera dane z ClientPage za pomocą bindingu i przekazuje do modelu Client
+
+````md magic-move
+<<< @/snippets/DBApp/DBApp/ViewModels/ClientViewModel.cs#clientName csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/ClientViewModel.cs#clientSurname csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/ClientViewModel.cs#constructor csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/ClientViewModel.cs#loadClient csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/ClientViewModel.cs#addClient csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/ClientViewModel.cs#onPropertyChanged csharp
 ````
 
 ---
 
-# Monaco Editor
+## FavouriteFoodViewModel
+Pobiera dane z FavouriteFoodPage za pomocą bindingu i przekazuje do modelu FavouriteFood
 
-Slidev provides built-in Monaco Editor support.
+````md magic-move
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#selectedFood csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#selectedClient csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#constructor csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#loadData csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#loadFood csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#loadClient csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#loadFavFood csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#addFavFood csharp
+<<< @/snippets/DBApp/DBApp/ViewModels/FavourtieFoodViewModel.cs#onPropertyChanged csharp
+````
 
-Add `{monaco}` to the code block to turn it into an editor:
+---
+layout: section
+transition: slide-left
+---
 
-```csharp {monaco}
-```
+# VIEWS
+
+---
+layout: two-cols-header
+transition: slide-right
+---
+
+::left::
+
+## FoodPage
+Guziki poszczute bindingiem i wyświetlanie danych jedzenia użytkownikowi za pomocą CollectionView
+
+````md magic-move {class: 'w-160'}
+<<< @/snippets/DBApp/DBApp/Views/FoodPage.xaml#insert xml
+<<< @/snippets/DBApp/DBApp/Views/FoodPage.xaml#view xml
+````
+
+::right::
+
+<img src="https://cooligus.s3.eu-central-1.amazonaws.com/db-app/foods-empty.png" alt="food-empty" class="w-50" style="float: right" />
+
+---
+layout: two-cols-header
+transition: slide-left
+---
+
+::left::
+
+<img src="https://cooligus.s3.eu-central-1.amazonaws.com/db-app/clients-empty.png" alt="clients-empty" class="w-50" style="float: left" />
+
+::right::
+
+## ClientPage
+Guziki poszczute bindingiem i wyświetlanie danych klientów użytkownikowi za pomocą CollectionView
+
+````md magic-move {class: 'w-160'}
+<<< @/snippets/DBApp/DBApp/Views/ClientPage.xaml#insert xml
+<<< @/snippets/DBApp/DBApp/Views/ClientPage.xaml#view xml
+````
+
+---
+layout: two-cols-header
+---
+
+::left::
+
+## FavouriteFoodPage
+Guziki poszczute bindingiem i wyświetlanie danych relacji klient-jedzenie użytkownikowi za pomocą CollectionView
+
+````md magic-move {class: 'w-160'}
+<<< @/snippets/DBApp/DBApp/Views/FavouriteFoodPage.xaml#insert xml
+<<< @/snippets/DBApp/DBApp/Views/FavouriteFoodPage.xaml#view xml
+````
+
+::right::
+
+<img src="https://cooligus.s3.eu-central-1.amazonaws.com/db-app/favourite-foods-empty.png" alt="fav-empty" class="w-50" style="float: right" />
+
+---
+background: https://cover.sli.dev
+class: text-center
+layout: cover
+---
+
+# Dziękuję za uwagę

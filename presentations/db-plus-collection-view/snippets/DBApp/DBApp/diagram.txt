@@ -1,0 +1,21 @@
+Table food {
+  id integer [primary key]
+  name varchar
+  in_stock integer
+  type enum
+}
+ 
+Table client {
+  id integer [primary key]
+  name varchar
+  lastname varchar
+}
+ 
+Table favourite_food {
+  id integer [primary key]
+  client_id integer
+  food_id integer
+}
+ 
+Ref: client.id < favourite_food.client_id
+Ref: food.id < favourite_food.food_id
