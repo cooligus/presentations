@@ -69,7 +69,7 @@ Połączenie z bazą danych
 
 ---
 layout: image-left
-image: https://baconmockup.com/1004/2008
+image: https://baconmockup.com/1000/2000
 transition: slide-left
 fonts:
     sans: Robot
@@ -90,7 +90,7 @@ Zarządzanie tabelą jedzenia ze strony backend
 
 ---
 layout: image-right
-image: https://baconmockup.com/1005/2010
+image: https://baconmockup.com/1001/2002
 transition: slide-right
 ---
 
@@ -185,9 +185,11 @@ transition: slide-left
 # VIEWS
 
 ---
-layout: two-cols
+layout: two-cols-header
 transition: slide-right
 ---
+
+::left::
 
 ## FoodPage
 Guziki poszczute bindingiem i wyświetlanie danych jedzenia użytkownikowi za pomocą CollectionView
@@ -202,9 +204,11 @@ Guziki poszczute bindingiem i wyświetlanie danych jedzenia użytkownikowi za po
 <img src="https://cooligus.s3.eu-central-1.amazonaws.com/db-app/foods-empty.png" alt="food-empty" class="w-50" style="float: right" />
 
 ---
-layout: two-cols
+layout: two-cols-header
 transition: slide-left
 ---
+
+::left::
 
 <img src="https://cooligus.s3.eu-central-1.amazonaws.com/db-app/clients-empty.png" alt="clients-empty" class="w-50" style="float: left" />
 
@@ -219,8 +223,10 @@ Guziki poszczute bindingiem i wyświetlanie danych klientów użytkownikowi za p
 ````
 
 ---
-layout: two-cols
+layout: two-cols-header
 ---
+
+::left::
 
 ## FavouriteFoodPage
 Guziki poszczute bindingiem i wyświetlanie danych relacji klient-jedzenie użytkownikowi za pomocą CollectionView
