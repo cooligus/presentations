@@ -9,7 +9,7 @@ transition: slide-left
 mdc: true 
 ---
 
-# Heilige Maria
+# Die Heilige Jungfrau Maria
 
 ---
 layout: image-left
@@ -22,7 +22,7 @@ image: https://upload.wikimedia.org/wikipedia/commons/f/fb/Nossa_Senhora_do_Perp
 
 - Maria ist die Mutter Jesu Christi.  
 - Sie wird als Heilige und als Mutter Gottes verehrt.  
-- Ihre Rolle im Christentum ist von großer Bedeutung.
+- Sie wurde um 18 v. Chr. in Israel geboren.
 
 ---
 layout: image-right
