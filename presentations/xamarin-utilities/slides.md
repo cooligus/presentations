@@ -1,5 +1,5 @@
 ---
-theme: ktym4a
+theme: seriph
 background: https://cover.sli.dev
 title: Peryferia w Xamarinie
 class: text-center
